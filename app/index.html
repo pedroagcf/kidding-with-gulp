@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kidding with gulp</title>
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/another-stylesheet.css">
+  <!--endbuild-->
+</head>
+<body>
+    
+
+
+
+  <!-- Gulp-useref concatenates any number of CSS and JavaScript
+  files into a single file by looking for a comment that 
+  starts with “<!–build:” and ends with “<!–endbuild–>” -->
+
+  <!-- build <type> <path>  --->
+  <!--build:js js/main.min.js --> 
+  <script src="js/lib/a-library.js"></script>
+  <script src="js/lib/another-library.js"></script>
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
+</body>
+</html>
